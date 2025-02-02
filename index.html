@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
         
-        <title> <img src="Assets/icons/icon.png" alt="AnyTech icon"> Home Page | AnyTech</title>
+        <title>  Home Page | AnyTech</title>
         <link rel="stylesheet" href="style.css">
     
     </head>
@@ -17,31 +17,39 @@
             <!-- Navigation and logo -->
             <header>
                 <div class="logo">
-                    <img src="Assets/images/anytech.svg" alt="Logo">
+                    <img src="Assets/images/logo svg.svg" alt="Logo">
                 </div>
-                <nav>
-                    <ul>
-                        <li class="dropdown">
-                            <a href="#">Solutions &#9662;</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Banking Solutions</a></li>
-                                <li><a href="#">Fintech Solutions</a></li>
-                                <li><a href="#">Payment Solutions</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
+                
+                  
+                    <nav class="navbar">
+                        <div class="menu">
+                          <!-- Solutions Dropdown -->
+                          <div class="dropdown">
+                           <a href="" class="dropdown-btn-solution">Solutions ⌄</a>
+                            <div class="dropdown-content">
+                              <a href="#" >AnyCaaS</a>
+                              <a href="#">AnyBaaS</a>
+                              <a href="#">AnyPaaS</a>
+                            </div>
+                          </div>
                       
-                        <li class="dropdown">
-                            <a href="#">Language &#9662;</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">Spanish</a></li>
-                                <li><a href="#">French</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+                          <!-- Normal Menu Items -->
+                          <a href="#" class="menu-item">Services</a>
+                          <a href="#" class="menu-item">About Us</a>
+                      
+                          <!-- Language Dropdown -->
+                          <div class="dropdown">
+                            <button class="dropdown-btn-language">🌍 EN ⌄</button>
+                            <div class="dropdown-content">
+                              <a href="#">EN (English)</a>
+                              <a href="#">TH (Thai)</a>
+                              <a href="#">ID (Bahasa Indonesia)</a>
+                              <a href="#">TW (Traditional Chinese)</a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                      
                 
             </header>
             
@@ -49,6 +57,7 @@
             <!-- Contact Us Button -->
 <!-- Contact Us Button -->
 <button class="contact-btn" onclick="openModal()">Contact Us</button>
+
 
 <!-- Modal Structure -->
 <div id="contactModal" class="modal">
@@ -100,17 +109,27 @@
         </header>
         <section class="hero">
             <!-- Hero content -->
+             <div>
+                <img class="backgroundssvg1" src="Assets/backgrounds/WaveLinesDesktop1.svg" alt="">
+                <img class="backgroundssvg2" src="Assets/backgrounds/WaveLinesDesktop2.svg" alt="">  
+                 <img class="backgroundssvg3" src="Assets/backgrounds/WaveLinesDesktop3.svg" alt="">  
+             </div>
 
-                <div class="hero-content">
+                <div class="hero-parent">
+                    <div class="hero-content">
                     <h1>Embrace the Future of Finance</h1>
-                    <p>Reimagine financial services with AnyTech’s open platform, distributed banking solution that powers transformation.</p>
-                    <a href="#contact" class="btn-primary">Reach Out to Us</a>
+                    <p>Reimagine financial services with AnyTech’s open platform, 
+                        distributed banking solution that powers transformation.</p>
+                 
+                    <a href="#contact" class="btn-primary"><span>Reach Out to Us  ></span></a>
+                  
                     
                 </div>
 
                 <div class="hero-image">
                     <img src="Assets/images/standing girl.jpg" alt="">
                 </div>
+            </div>
             </section>
             
      <!-- About Us section-->
@@ -141,7 +160,7 @@
                     <h2>Our Philosophy</h2>
                 <h1>Human-centred innovation
                 </h1>
-                <img src="assets/images/blockchain .png" alt="Full-suite solutions">
+                <img  class="blockchain-image"    src="assets/images/blockchain .png" alt="Full-suite solutions">
                 </div>
                 <div class="philosophy-content">
                     <div class="philosophy-item">
@@ -163,31 +182,69 @@
             </section>
             
         </section>
-        <section class="technology">
+        
             <!-- Technology content -->
-            <section class="technology">
-                <h2>Technology Built for You</h2>
-                <div class="technology-content">
-                    <div class="technology-item">
-                        <h3>Customer focused</h3>
-                        <p>Elevate customer experience and achieve agile financial product innovation with the world’s first, consumer-centric, real-time transaction account processing and credit limit system.</p>
+            <section class="technology-carousel">
+                <h2 class="section-title">Technology Built for You</h2>
+                <h1>The future of finance</h1>
+              
+                <div class="carousel-buttons">
+                  <button class="tab-button active" data-tab="customer">Customer focused</button>
+                  <button class="tab-button" data-tab="agile">Agile and adaptable</button>
+                  <button class="tab-button" data-tab="compliance">Compliance ready</button>
+                  <button class="tab-button" data-tab="secure">Secure and safe</button>
+                </div>
+              
+                <div class="carousel-content">
+                  <div class="tab-content active" id="customer">
+                    <div class="content-left">
+                        <h3>CUSTOMER FOCUSED
+                        </h3>
+                      <h3>Purpose-built financial services</h3>
+                      <p>Elevate customer experience and achieve agile financial product innovation...</p>
                     </div>
-                    <div class="technology-item">
-                        <h3>Agile and adaptable</h3>
-                        <p>Innovate with evolving customer demands through our open platform-based technology architecture. Stay ahead of the ever-changing financial landscape with a strong focus on security, compliance, and performance.</p>
+                    <div class="content-right">
+                      <img src="Assets/images/numbers.jpg" alt="Customer Focused">
                     </div>
-                    <div class="technology-item">
-                        <h3>Compliance ready</h3>
-                        <p>Navigate through the evolving regulatory landscape with confidence by streamlining compliance management—through real-time risk monitoring solutions powered by AI and machine learning.</p>
+                  </div>
+              
+                  <div class="tab-content" id="agile">
+                    <div class="content-left">
+                      <h3>Agile Solutions for Modern Finance</h3>
+                      <p>Leverage cutting-edge technology for real-time adaptability...</p>
                     </div>
-                    <div class="technology-item">
-                        <h3>Secure and safe</h3>
-                        <p>Discover unparalleled security trusted by financial
-            
-        </section>
+                    <div class="content-right">
+                      <img src="Assets/images/buildings.jpg" alt="Agile and Adaptable">
+                    </div>
+                  </div>
+              
+                  <div class="tab-content" id="compliance">
+                    <div class="content-left">
+                      <h3>Ensuring Compliance and Security</h3>
+                      <p>Our system is designed to comply with the latest regulations...</p>
+                    </div>
+                    <div class="content-right">
+                      <img src="Assets/images/man & women .png" alt="Compliance Ready">
+                    </div>
+                  </div>
+              
+                  <div class="tab-content" id="secure">
+                    <div class="content-left">
+                      <h3>Secure and Safe Transactions</h3>
+                      <p>Our platform ensures end-to-end security for all financial operations...</p>
+                    </div>
+                    <div class="content-right">
+                      <img src="Assets/images/bee.jpg" alt="Secure and Safe">
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              
+              
 
 
-<section>
+
     <!-- Trusted by the best-->
     <section class="trusted" id="trusted">
         <h2>Trusted By The Best</h2>
@@ -237,6 +294,7 @@
                 <h2>Legacy no longer</h2>
                 <p>Talk to us to find out how we can transform your organisation for the future</p>
                 <a href="#" class="cta-button">Contact Us</a>
+             
             </div>
         </section>
         
@@ -245,25 +303,35 @@
     
     
 </section>
-        <footer>
-            <!-- Footer content -->
-            <footer>
-                <div class="footer-content">
-                    <div class="contact-info">
-                        <h3>Contact Us</h3>
-                        <p>Email: info@anytxn.com</p>
-                        <p>Phone: +1 (234) 567-890</p>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/anytxn" target="_blank">Facebook</a>
-                        <a href="https://www.twitter.com/anytxn" target="_blank">Twitter</a>
-                        <a href="https://www.linkedin.com/company/anytxn" target="_blank">LinkedIn</a>
-                    </div>
-                </div>
-                <p>&copy; 2025 AnyTxn. All Rights Reserved.</p>
-            </footer>
-            
-        </footer>
+<footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="Assets/images/logo svg.svg" alt="Company Logo">
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>©2023 All rights reserved. Any Technology Pte Ltd.</p>
+        <div class="social-icons">
+         
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      
+    </div>
+  </footer>
+  
         <script src="script.js"></script>
 
     </body>

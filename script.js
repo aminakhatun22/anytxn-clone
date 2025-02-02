@@ -68,7 +68,32 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(counter);
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".tab-content");
 
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Remove "active" class from all buttons
+        buttons.forEach((btn) => btn.classList.remove("active"));
+
+        // Add "active" class to the clicked button
+        this.classList.add("active");
+
+        // Get the target content ID
+        const tabId = this.getAttribute("data-tab");
+
+        // Hide all contents
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        // Show the selected content
+        document.getElementById(tabId).classList.add("active");
+      });
+    });
+  });
+  
 
 
 
